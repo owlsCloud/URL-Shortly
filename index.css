@@ -1,3 +1,8 @@
+:root {
+  --small-text-color: hsl(257, 7%, 63%);
+  --big-text-color: hsl(257, 27%, 26%);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -21,7 +26,7 @@ ul {
 .navLinks {
   text-decoration: none;
   font-weight: 500;
-  color: hsl(257, 7%, 63%);
+  color: var(--small-text-color);
 }
 .signUp {
   background-color: hsl(180, 66%, 49%);
@@ -32,7 +37,32 @@ ul {
   margin-left: 1rem;
 }
 .rightNav {
-  color: hsl(257, 7%, 63%);
+  color: var(--small-text-color);
+}
+.heroContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.hero {
+  margin: auto;
+  justify-content: space-between;
+  width: 25%;
+}
+.heroTitle {
+  font-size: 3rem;
+  color: var(--big-text-color);
+}
+.heroSub {
+  color: var(--small-text-color);
+}
+.getStarted {
+  margin-top: 2rem;
+  background-color: hsl(180, 66%, 49%);
+  border-radius: 50px;
+  color: white;
+  padding: 0.5rem 2rem;
+  border: none;
 }
 .section1 {
 }
